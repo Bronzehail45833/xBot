@@ -3,7 +3,7 @@ from discord.ext import commands
 from GetGamertag import Checker
 
 Token = ''
-Channel_id = 1141747340743557222
+Channel_id = 
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
