@@ -9,9 +9,8 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 @bot.event
 async def on_ready():
-    print(f'logged in')
+    print(f'successfully logged in as {bot.user}')
     await bot.change_presence(status=discord.Status.online, activity=discord.Game("Gamertags"))
-
 
 @bot.command()
 async def check(ctx, gamertag=None):
