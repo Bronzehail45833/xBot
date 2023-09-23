@@ -1,9 +1,8 @@
 import discord
 from discord.ext import commands
-from GetGamertag import Checker
+from functions.GetGamertag import Checker
 
 Token = ''
-Channel_id = 
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
@@ -11,6 +10,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 async def on_ready():
     print(f'successfully logged in as {bot.user}')
     await bot.change_presence(status=discord.Status.online, activity=discord.Game("Gamertags"))
+
 
 @bot.command()
 async def check(ctx, gamertag=None):
